@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLACEXPORT | Exportación de materiales de construcción</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(to bottom, #ffffff 70%, #e6f0ff);
+      border-bottom: 3px solid #0a3d62;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #0a3d62;
+    }
+
+    .logo::before {
+      content: "▩";
+      color: #1e90ff;
+      margin-right: 10px;
+    }
+
+    header p {
+      color: #1e90ff;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    nav {
+      background-color: #0a3d62;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    #inicio {
+      background: url('https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+      color: white;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+      text-align: center;
+      border-radius: 10px;
+      padding: 100px 20px;
+    }
+
+    #inicio h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    #inicio p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #1ebe57;
+    }
+
+    #sobre {
+      background-color: #f4f6f9;
+      border-radius: 12px;
+    }
+
+    #productos {
+      background-color: #ffffff;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    #contacto {
+      background-color: #f4f6f9;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #0a3d62;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #07416d;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">LLACEXPORT</div>
+    <p>Exportación de materiales de construcción — Castellón · Valencia · Barcelona</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h1>Bienvenido a LLACEXPORT</h1>
+    <p>Expertos en azulejos cerámicos, porcelánicos y materiales de construcción.</p>
+    <a href="https://wa.me/34664001282?text=Hola,+estoy+interesado+en+sus+productos+de+construcción." class="btn">Contáctanos por WhatsApp</a>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      LLACEXPORT es una empresa española especializada en la exportación de materiales de construcción,
+      ofreciendo productos de alta calidad desde Castellón y Valencia a clientes de todo el mundo.
+      Nuestra experiencia en azulejos cerámicos, porcelánicos, grifos, pintura y accesorios de baño y cocina
+      nos convierte en una referencia en el sector.
+    </p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="galeria">
+      <img src="https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Azulejos cerámicos" />
+      <img src="https://images.pexels.com/photos/1457843/pexels-photo-1457843.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Porcelánico" />
+      <img src="https://images.pexels.com/photos/716661/pexels-photo-716661.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Grifos" />
+      <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Manetas de puertas" />
+      <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Pintura" />
+      <img src="https://images.pexels.com/photos/210689/pexels-photo-210689.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Accesorios de baño y cocina" />
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfonos:</strong> 664001282 / 638747728</p>
+    <p><strong>Email:</strong> llacexport@gmail.com</p>
+    <p><strong>Ubicación:</strong> Navarcles, Barcelona (España)</p>
+
+    <a href="https://wa.me/34664001282?text=Hola,+estoy+interesado+en+sus+productos+de+construcción." class="btn">WhatsApp 664001282</a>
+    <a href="https://wa.me/34638747728?text=Hola,+estoy+interesado+en+sus+productos+de+construcción." class="btn">WhatsApp 638747728</a>
+
+    <form action="mailto:llacexport@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 LLACEXPORT – Todos los derechos reservados
+  </footer>
+</body>
+</html>
