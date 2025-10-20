@@ -17,7 +17,7 @@
       background-color: #004aad;
       color: white;
       text-align: center;
-      padding: 40px 10px;
+      padding: 80px 20px;
       background-image: url('principal.webp');
       background-size: cover;
       background-position: center;
@@ -27,65 +27,81 @@
     header::after {
       content: "";
       position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
     }
 
     header h1 {
-      position: relative;
-      z-index: 1;
       font-size: 3rem;
-      margin-bottom: 10px;
+      margin: 0;
       letter-spacing: 2px;
     }
 
     header p {
-      position: relative;
-      z-index: 1;
       font-size: 1.2rem;
+      margin-top: 10px;
     }
 
     h2 {
       text-align: center;
       color: #004aad;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 2rem;
     }
 
     .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
       margin: 40px auto;
       max-width: 1200px;
       padding: 0 20px;
       justify-items: center;
     }
 
-    .galeria img {
+    .producto {
+      text-align: center;
+    }
+
+    .producto img {
       width: 100%;
       max-width: 350px;
       height: 250px;
       object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .galeria img:hover {
+    .producto img:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    .producto p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #004aad;
     }
 
     footer {
       background-color: #004aad;
       color: white;
       text-align: center;
-      padding: 30px 10px;
-      margin-top: 50px;
+      padding: 40px 10px;
+      margin-top: 60px;
     }
 
     footer p {
-      margin: 5px 0;
+      margin: 8px 0;
     }
 
     a {
@@ -102,20 +118,44 @@
 
   <header>
     <h1>LLACEXPORT</h1>
-    <p>Exportación de materiales de construcción de Castellón y Valencia — especialistas en cerámica, porcelánico, azulejos y accesorios</p>
+    <p>Exportación de materiales de construcción desde Castellón y Valencia — expertos en cerámica, porcelánico, azulejos y accesorios.</p>
   </header>
 
   <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="galeria">
-      <img src="ceramica.webp" alt="Cerámica">
-      <img src="PORCELANICO2.webp" alt="Porcelánico">
-      <img src="AZULEJOS.webp" alt="Azulejos">
-      <img src="cocinaaa.webp" alt="Cocina 1">
-      <img src="cocinas dos.webp" alt="Cocina 2">
-      <img src="pintura.webp" alt="Pintura">
-      <img src="grifos.webp" alt="Grifos">
-      <img src="manetas.webp" alt="Manetas">
+      <div class="producto">
+        <img src="ceramica.webp" alt="Cerámica">
+        <p>Cerámica</p>
+      </div>
+      <div class="producto">
+        <img src="PORCELANICO2.webp" alt="Porcelánico">
+        <p>Porcelánico</p>
+      </div>
+      <div class="producto">
+        <img src="AZULEJOS.webp" alt="Azulejos">
+        <p>Azulejos</p>
+      </div>
+      <div class="producto">
+        <img src="cocinaaa.webp" alt="Cocina 1">
+        <p>Cocina 1</p>
+      </div>
+      <div class="producto">
+        <img src="cocinas dos.webp" alt="Cocina 2">
+        <p>Cocina 2</p>
+      </div>
+      <div class="producto">
+        <img src="grifos.webp" alt="Grifos">
+        <p>Grifos</p>
+      </div>
+      <div class="producto">
+        <img src="manetas.webp" alt="Manetas">
+        <p>Manetas</p>
+      </div>
+      <div class="producto">
+        <img src="pintura.webp" alt="Pintura">
+        <p>Pintura</p>
+      </div>
     </div>
   </section>
 
