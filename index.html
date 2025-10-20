@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LLACEXPORT</title>
+  <title>LLACEXPORT | Exportación de materiales de construcción</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f0e9;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #0a3d62;
     }
 
     header {
-      background-color: #2c3e50;
-      color: white;
+      position: relative;
       text-align: center;
-      padding: 20px 0;
-    }
-
-    nav a {
       color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    header img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+
+    header h1 {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
 
     section {
@@ -36,52 +50,18 @@
       text-align: center;
     }
 
-    .hero {
-      position: relative;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 35%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      text-shadow: 0 0 6px rgba(0,0,0,0.7);
-    }
-
-    .hero-text h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .hero-text p {
-      font-size: 20px;
+    h2 {
+      color: #0a3d62;
+      font-size: 28px;
       margin-bottom: 20px;
-    }
-
-    .btn {
-      background-color: #25d366;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background-color: #1ebe57;
+      border-bottom: 3px solid #0a3d62;
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
     .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
@@ -90,114 +70,95 @@
       width: 100%;
       height: 250px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
     }
 
     footer {
-      background-color: #2c3e50;
+      background-image: url('IMG_0315.jpeg');
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
+      padding: 60px 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    input, textarea {
-      width: 80%;
-      max-width: 400px;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+    .contacto {
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 20px 30px;
+      border-radius: 10px;
     }
 
-    button {
-      background-color: #25d366;
+    .whatsapp {
+      background-color: #25D366;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .whatsapp a {
       color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
+      text-decoration: none;
+      font-size: 18px;
     }
 
-    button:hover {
-      background-color: #1ebe57;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <img src="51414B19-6FD5-4BC6-AEDE-3BEADEAAB8FE.JPG" alt="LLACEXPORT fondo principal">
+    <h1>LLACEXPORT 2025</h1>
+    <p>Exportación de materiales de construcción – Castellón y Valencia</p>
   </header>
 
-  <!-- HERO PRINCIPAL -->
-  <section id="inicio" class="hero">
-    <img src="azulejos.webp" alt="Fondo principal LLACEXPORT">
-    <div class="hero-text">
-      <h1>Bienvenido a LLACEXPORT</h1>
-      <p>Expertas en azulejos cerámicos, porcelánicos y materiales de construcción.</p>
-      <a href="#contacto" class="btn">Contáctanos por WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- SECCIÓN SOBRE NOSOTROS -->
-  <section id="sobre">
+  <section id="inicio">
     <h2>Sobre Nosotros</h2>
-    <p>
-      LLACEXPORT es una empresa española especializada en la exportación de materiales de construcción,
-      ofreciendo productos de alta calidad desde Castellón y Valencia a clientes de todo el mundo.
-      Nuestra experiencia en azulejos cerámicos, porcelánicos, grifos, pintura y accesorios de baño y cocina
-      nos convierte en una referencia en el sector.
-    </p>
+    <p>Somos especialistas en la exportación de materiales de construcción: azulejos cerámicos, porcelánicos, manetas, grifos, cocinas y accesorios. Desde Castellón y Valencia, líderes en arcilla y azulejos, ofrecemos la mejor calidad a nivel internacional.</p>
   </section>
 
-  <!-- PRODUCTOS -->
   <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="galeria">
-      <img src="ceramica.webp" alt="Cerámica">
-      <img src="PORCELANICO2.webp" alt="Porcelánico">
-      <img src="AZULEJOS.webp" alt="Azulejos">
-      <img src="cocinaaa.webp" alt="Cocina 1">
-      <img src="cocinas dos.webp" alt="Cocina 2">
-      <img src="xxxxx.webp" alt="Materiales de construcción">
+      <img src="azulejos.jpg" alt="Azulejos">
+      <img src="azulejos.webp" alt="Azulejos porcelánicos">
+      <img src="cocinas dos.webp" alt="Cocina moderna">
+      <img src="IMG_0313.jpeg" alt="Cerámica y materiales">
+      <img src="IMG_0312.jpeg" alt="Baño y grifería">
+      <img src="IMG_0315.jpeg" alt="Materiales de construcción">
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p><strong>Teléfonos:</strong> 664001282 / 638747728</p>
-    <p><strong>Email:</strong> llacexport@gmail.com</p>
-    <p><strong>Ubicación:</strong> Navarcles, Barcelona (España)</p>
-    <a href="https://wa.me/34664001282" class="btn">WhatsApp 664001282</a>
-    <a href="https://wa.me/34638747728" class="btn">WhatsApp 638747728</a>
-
-    <form>
-      <input type="text" placeholder="Tu nombre">
-      <input type="email" placeholder="Tu correo electrónico">
-      <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
-
-  <footer>
-    © 2025 LLACEXPORT
+  <footer id="contacto">
+    <div class="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Correo:</strong> <a href="mailto:llacexport@gmail.com">llacexport@gmail.com</a></p>
+      <p><strong>Teléfonos:</strong> 664001282 / 638747728</p>
+      <p><strong>Ubicación:</strong> Navarcles, Barcelona – España</p>
+      <div class="whatsapp">
+        <a href="https://wa.me/34664001282" target="_blank">💬 WhatsApp directo</a>
+      </div>
+    </div>
+    <p style="margin-top:40px;">© 2025 LLACEXPORT - Todos los derechos reservados</p>
   </footer>
 
 </body>
 </html>
+
 
 
 
