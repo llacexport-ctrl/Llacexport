@@ -5,7 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LLACEXPORT | Exportación de materiales de construcción</title>
   <style>
-    body {
+ .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: 250px; /* puedes ajustar esto a 220 o 300 si quieres más alto */
+  object-fit: cover; /* recorta la imagen sin deformarla */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón (opcional) */
+.galeria img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+   body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       background-color: #ffffff;
